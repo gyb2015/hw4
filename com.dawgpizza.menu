@@ -1,0 +1,37 @@
+
+<script src="http://www.dawgpizza.com/orders/menu.js"></script>
+                
+var idx;
+var pizza;
+for (idx = 0; idx < com.dawgpizza.menu.pizzas.length; ++idx) {
+    pizza = com.dawgpizza.menu.pizzas[idx];
+
+    //pizza.name = name of pizza
+    //pizza.description = description of pizza
+    //pizza.prices = array of three numbers, which are prices for small, medium, and large
+    //pizza.prices[0] = price for small
+    //pizza.prices[1] = price for medium
+    //pizza.prices[2] = price for large
+
+} //for each pizza
+
+var idx;
+var drink;
+for (idx = 0; idx < com.dawgpizza.menu.drinks.length; ++idx) {
+    drink = com.dawgpizza.menu.drinks[idx];
+
+    //drink.name = name of drink
+    //drink.price = price of drink
+
+} //for each drink
+
+
+var idx;
+var dessert;
+for (idx = 0; idx < com.dawgpizza.menu.dessert.length; ++idx) {
+    drink = com.dawgpizza.menu.dessert[idx];
+
+    //drink.name = name of dessert
+    //drink.price = price of dessert
+
+} //for each dessert

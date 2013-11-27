@@ -1,0 +1,170 @@
+﻿<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Dawg Pizza</title>
+		<meta name="author" content="gyb2015">
+		<meta name="description" content="(206)555-1212">
+		<meta property="og:image" content="http://students.washington.edu/gyb2015/info343/hw4/image/logo-vertical.png">
+		<meta name="description" content="http://students.washington.edu/gyb2015/info343/hw4/order.html">
+		<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	    <!-- our own stylesheet for overrides -->
+	    <link rel="stylesheet" href="css/styles.css">
+	</head>
+
+	<body>
+        
+		<div class="content-box">
+			<a href="index.html"><img class="logo" src="image/logo-vertical.png" alt="logo Icon"></a>
+			<p class="motto">Dawg Pizza</p>
+			<p>"Awesome wood-fired pizza with fresh ingredients baked to order within the Seattle city from noon to 11:00pm, accept cash or credit cards on delivery!"</p>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="job.html">Job</a></li>
+					<li><a href="order.html">Order</a></li>
+				</ul>	
+			</nav>
+			<p><img class="pizza-order" src="image/Capture.jpg" alt="pizza-order Icon"></p>
+			<main>
+				<header>
+					<h1>Dawg Pizza Deliver Menu</h1>
+					<h3>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens.</h3>
+				</header>
+					<section>
+					<br>
+                    
+                    <aside>"$20 minimum order, the delivery is free. Choose from any of our avialable sizes, but no topping substitutions on deliveries!"</aside>
+		            <div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<h1>Your Cart</h1>
+							<div class="cart-container"></div>
+                            <div class="row templates template-cart-container">
+                                <div class="col-xs-10">
+                                    <button type="button" class="btn btn-default btn-xs remove-item">&times;</button>
+                                    <span class="item-name"></span>
+                                </div>
+                                <div class="col-xs-2">
+                                    $<span class="item-price"></span>
+                                </div>
+                            </div>
+							<div class="cart-footer">
+                                <div class="row subtotal-row">
+									<div class="col-xs-10">
+										Subtotal:
+									</div>
+									<div class="col-xs-2">
+										$<span class="subtotal-price">0</span>
+									</div>
+								</div>
+								<div class="row tax-row">
+									<div class="col-xs-10">
+										Tax (9.5%):
+									</div>
+									<div class="col-xs-2">
+										$<span class="tax-price">0</span>
+									</div>
+								</div>
+								<div class="row total-row">
+									<div class="col-xs-10">
+										<strong>Total:</strong>
+									</div>
+									<div class="col-xs-2">
+										$<span class="total-price">0</span>
+									</div>
+								</div>
+                                <div class="row">
+                                    <h1>Your Contact Info</h1>
+                                    <div class="col-xs-12">
+                                    <form method="POST" action="http://dawgpizza.com/orders/" class="form-horizontal cart-form" role="form">
+                                        <input type="hidden" name="cart"></input>
+                                        Name:     <input type="text"  class="form-control" name="name" id="name" placeholder="name" required></input>
+                                        Address1: <input type="text"  class="form-control" name="address1" id="address1" placeholder="address1" required></input>
+                                        Address2: <input type="text"  class="form-control" name="address2" id="address2" placeholder="address2 (optional)"></input>
+                                        Zip: <input type="text"  class="form-control" name="zip" id="zip" placeholder="zip" required></input>
+                                        Phone: <input type="text"  class="form-control" name="phone" id="phone" placeholder="phone" required></input>
+                                    </form>
+                                    </div>
+                                </div>
+                                <div class="row"><div class="col-xs-12 warning"></div></div>
+								<div class="row">
+									<div class="col-xs-12 button-row">
+										<button type="button" class="btn btn-default retrieve-last-order">Retrieve Last Order</button>
+										<button type="button" class="btn btn-default start-over">Start Over</button>
+										<button type="button" class="btn btn-primary place-order">Place My Order</button>
+									</div>
+								</div>                        
+							</div>
+						</div>
+						<div class="col-md-6 col-md-pull-6">
+							<h1>Pizzas:</h1>
+							<div class="template-pizzas-container">
+								<div class="template-pizzas">
+									<div class="name"></div>
+									<div class="description"></div>
+                                    <button class="btn templates btn-default add-to-cart size-small" type="button" data-type="pizza" data-size="small">
+                                        <span class="price"></span>
+                                    </button>
+                                    <button class="btn templates btn-default add-to-cart size-medium" type="button" data-type="pizza" data-size="medium">
+                                        <span class="price"></span>
+                                    </button>
+                                    <button class="btn templates btn-default add-to-cart size-large" type="button" data-type="pizza" data-size="large">
+                                        <span class="price"></span>
+                                    </button>
+									<p>&nbsp;</p>
+								</div>
+							</div>
+							<h1>Drinks:</h1>
+							<div class="template-drinks-container">
+								<div class="template-drinks">
+									<div class="name"></div>
+									<button class="btn templates btn-default add-to-cart" type="button" data-type="drink">
+                                        <span class="price"></span>
+                                    </button>
+									<p>&nbsp;</p>
+								</div>
+							</div>
+							<h1>Dessert:</h1>
+							<div class="template-desserts-container">
+								<div class="template-desserts">
+									<div class="name"></div>
+									<button class="btn templates btn-default add-to-cart" type="button" data-type="dessert">
+                                        <span class="price"></span>
+                                    </button>
+									<p>&nbsp;</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					</section>
+					<br>
+				</main>
+			<p>Deliver Seattle city from noon to 11:00PM</p>
+			<p>Monday through Saturday</p>
+			<p>206-555-1212</p>
+			<p>4306 University Way NE, Seattle, WA 98105</p>
+			<div class="footer">
+
+
+				<p><a href="mailto:dawgpizzaseattle@gmail.com">dawgpizzaseattle@gmail.com </a>   <a href="https://twitter.com/DawgPizzaSea" class="twitter-follow-button" data-show-count="false">Follow @DawgPizzaSea</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></p>                
+
+				<br>
+				<p>&copy; Dawg pizza</p>
+			</div>
+		</div>
+
+		<!-- hot links to Bootstrap JavaScript and jQuery (required by Bootstrap) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script src="http://www.dawgpizza.com/orders/menu.js"></script>
+		<script type="text/javascript" src="detail.js"></script>
+		
+	</body>
+
+	
+</html>

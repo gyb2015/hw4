@@ -1,0 +1,166 @@
+/* reset CSS file to reset browser default styling to a consistent starting point */
+@import url(reset.css);
+body {
+	background-image: url(../img/texture-light.png);
+	background-repeat:repeat;
+	font-family: 'Calibri', sans-serif;
+	font-size: 18px;
+	width: 80%;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+.content-box {
+	width: 90%;
+	background-color: black;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 2px 2px 6px #555;
+	padding: 10px;
+}
+
+section p {
+	margin-left: 90px;
+}
+li {
+	margin-left: 100px;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+h2 {
+	font-size: 15px;
+}
+h3 {
+	font-size: 15px;
+	margin-left: 30px;
+}
+h4 {
+	
+	font-size: 15px;
+	margin-left: 60px;
+}
+h5 {
+	font-size: 15px;
+	margin-left: 90px;
+	margin-bottom: 10px;
+}
+aside {
+	text-align:center;
+	background-color: #EEE;
+	border: 1px dotted #ccc;
+	padding: 20px;
+	font-weight: bold;
+	color: purple;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+
+}
+.col-md-2{
+	width: 50%;
+
+}
+.pizza1{
+	width: 100%;
+	height: 320px;
+	margin-bottom: 10px;
+}
+.pizza-order{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+.pizza-oven{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.logo{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	height: 90px;
+}
+.motto {
+	font-size: 50px;
+	font-weight: bold;
+	font-family: "Boogaloo";
+}
+.motto:hover {
+	color: #CCC;
+}
+.footer {
+	border-top: thin solid gray;
+	font-style: italic;
+}
+.footer:hover {
+	color: #800080;
+}
+.templates {
+    display: none;
+}
+.total-price {
+    font-weight: bold;
+}
+.total-row {
+    border-top: 1px solid #AAA;
+}
+.subtotal-row {
+    border-top: 1px solid #AAA;
+}
+.button-row {
+    margin-top: 2em;
+    text-align: right;
+}
+.warning {
+    color: #F00;
+    display: none;
+}
+nav{
+	width: 100%;
+}
+
+nav ul {
+	background-color: #FFA100;
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	clear: both;
+
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+nav a:link,
+nav a:visited {
+}
+
+nav a:hover {
+	text-decoration: underline;
+	background-color: #FF9A40;
+	border-radius: 5px;
+}
+a {
+	text-decoration: none;
+}
